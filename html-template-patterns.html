@@ -3,11 +3,267 @@
 </head>
 
 <body>
-  {{> hello}}
+  <div class="container">
+    <h2>Click to view the templates in the browser</h2>
+    <ul class="nav nav-pills">
+      <li><a href="#">Banded</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Feed</a></li>
+      <li><a href="#">Grid</a></li>
+    </ul>
+    <ul class="nav nav-list">
+      <li class="divider"></li>
+    </ul>
+    {{> realty}}
+  </div>
+
 </body>
 
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
+<template name="realty">
+  <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="row">
+        <div class="span12">
+          <a href="index.html"
+             class="brand">Realty</a>
+          <ul class="nav">
+            <li class="active"><a href="#">Rentals</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h4>Featured Properties</h4>
+  <div class="row">
+    <div class="span4">
+      <img src="http://placehold.it/480x320&amp;text=[img]">
+    </div>
+    <div class="span8">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>neighborhood</th>
+            <th>unit size</th>
+            <th>rate ($)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fenway</td>
+            <td>Studio / 1 Bath</td>
+            <td>1200</td>
+            <td>Contact</td>
+          </tr>
+        </tbody>
+      </table>      
+    </div>
+  </div>
+</template>
+
+
+<template name="banded">
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-inner">
+      <div class="row">
+        <div class="span12">
+          <a href="index.html"
+             class="brand">Banded</a>
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <img src="http://placehold.it/940x200&amp;text=[img]">
+</template>
+
+<template name="blog">
+  <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="row">
+        <div class="span12">
+          <a href="index.html"
+             class="brand">Blog</a>
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1>Blog <small>This is my blog. It's awesome.</small></h1>
+  <hr />
+  <div class="row">
+    <div class="span9">
+      <article>
+        <h3><a href="#">Blog Post Title</a></h3>
+        <h6>Written by <a href="#">John Smith</a> on August 12, 2012</h6>
+      </article>
+      <div class="row">
+        <div class="span5">
+          <p>Bacon ipsum dolor sit amet nulla ham qui sint
+          exercitation eiusmod commodo, chuck duis velit. Aute in
+          reprehenderit, dolore aliqua non est magna in labore pig
+          pork biltong. Eiusmod swine spare ribs reprehenderit culpa.
+          </p>
+          <p>Boudin aliqua adipisicing rump corned beef. Nulla corned
+          beef sunt ball tip, qui bresaola enim jowl. Capicola short
+          ribs minim salami nulla nostrud pastrami.</p>
+        </div>
+        <div class="span4">
+          <img class="img-rounded" src="http://placehold.it/400x240&amp;text=[img]">
+        </div>
+      </div>
+      <br />
+      <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork
+      chop in. Swine short ribs meatball irure bacon nulla pork belly
+      cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui
+      bresaola enim jowl. Capicola short ribs minim salami nulla
+      nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola
+      enim jowl. Capicola short ribs minim salami nulla nostrud
+      pastrami.</p>
+      <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork
+      chop in. Swine short ribs meatball irure bacon nulla pork belly
+      cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui
+      bresaola enim jowl. Capicola short ribs minim salami nulla
+      nostrud pastrami.</p>
+    </div>
+    <div class="span3">
+      <aside>
+
+        <h5>Categories</h5>
+        <ul class="nav nav-tabs nav-stacked">
+          <li><a href="#">News</a></li>
+          <li><a href="#">Code</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Fun</a></li>
+          <li><a href="#">Weasels</a></li>
+        </ul>
+
+        <div class="well">
+          <h5>Featured</h5>
+          <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+          <a href="#">Read More →</a>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</template>
+
+<template name="product">
+<body>
+
+  <!-- Header and Nav -->
+
+  <div class="row">
+    <div class="three columns">
+      <h1><img src="http://placehold.it/400x100&amp;text=Logo"></h1>
+    </div>
+    <div class="nine columns">
+      <ul class="nav-bar right">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- End Header and Nav -->
+
+
+  <!-- First Band (Slider) -->
+  <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->
+
+  <div class="row">
+    <div class="twelve columns">
+      <div class="orbit-wrapper" style="width: inherit; height: inherit; "><div id="slider" class="orbit" style="width: inherit; height: inherit; "><img src="http://placehold.it/1000x400&amp;text=[img 1]" class="orbit-slide fluid-placeholder">
+        <img src="http://placehold.it/1000x400&amp;text=[img 1]" class="orbit-slide" style="z-index: 1; opacity: 0; display: block; left: -970px; ">
+        <img src="http://placehold.it/1000x400&amp;text=[img 2]" class="orbit-slide" style="display: block; left: -970px; z-index: 1; opacity: 0; ">
+        <img src="http://placehold.it/1000x400&amp;text=[img 3]" class="orbit-slide" style="display: block; left: 0px; z-index: 3; opacity: 1; ">
+        <img src="http://placehold.it/1000x400&amp;text=[img 4]" class="orbit-slide" style="display: block; left: -970px; z-index: 1; opacity: 0; ">
+      </div><div class="timer"><span class="mask move"><span class="rotator move" style="-webkit-transform: rotate(196deg); "></span></span><span class="pause"></span></div><div class="orbit-caption"></div><div class="slider-nav hide-for-small"><span class="right">Right</span><span class="left">Left</span></div></div>
+
+      <hr>
+    </div>
+  </div>
+
+
+  <!-- Three-up Content Blocks -->
+
+  <div class="row">
+
+    <div class="four columns">
+      <img src="http://placehold.it/400x300&amp;text=[img]">
+      <h4>This is a content section.</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+    </div>
+
+    <div class="four columns">
+      <img src="http://placehold.it/400x300&amp;text=[img]">
+      <h4>This is a content section.</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+    </div>
+
+    <div class="four columns">
+      <img src="http://placehold.it/400x300&amp;text=[img]">
+      <h4>This is a content section.</h4>
+      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+    </div>
+
+  </div>
+
+
+  <!-- Call to Action Panel -->
+  <div class="row">
+    <div class="twelve columns">
+
+      <div class="panel">
+        <h4>Get in touch!</h4>
+
+        <div class="row">
+          <div class="nine columns">
+            <p>We'd love to hear from you, you attractive person you.</p>
+          </div>
+          <div class="three columns">
+            <a href="#" class="radius button right">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+  <footer class="row">
+    <div class="twelve columns">
+      <hr>
+      <div class="row">
+        <div class="six columns">
+          <p>© Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="six columns">
+          <ul class="inline-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
 </template>
