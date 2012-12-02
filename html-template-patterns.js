@@ -1,14 +1,12 @@
 if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to html-template-patterns.";
-  };
+  Meteor.startup(function () {
+      
+    $('#view').html(Template.realty({}));
+    $('ul#master-nav li a').click(function(e) {
+      var id = this.id;
+      $('#view').html(Template[id]({}));
+    });
 
-  Template.hello.events({
-    'click input' : function () {
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("You pressed the button");
-    }
   });
 }
 

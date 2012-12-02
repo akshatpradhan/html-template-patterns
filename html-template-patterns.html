@@ -5,18 +5,17 @@
 <body>
   <div class="container">
     <h2>Click to view the templates in the browser</h2>
-    <ul class="nav nav-pills">
-      <li><a href="#">Banded</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Feed</a></li>
-      <li><a href="#">Grid</a></li>
+    <ul class="nav nav-pills" id="master-nav">
+      <li><a id="realty" href="#">Realty</a></li>
+      <li><a id="banded" href="#">Banded</a></li>
+      <li><a id="blog" href="#">Blog</a></li>
+      <li><a id="product" href="#">Product</a></li>
     </ul>
     <ul class="nav nav-list">
       <li class="divider"></li>
     </ul>
-    {{> realty}}
+    <div id="view"></div>
   </div>
-
 </body>
 
 <template name="realty">
